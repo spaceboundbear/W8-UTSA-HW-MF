@@ -1,0 +1,12 @@
+body {
+  background-color: white;
+}
+
+.contact-button {
+  text-decoration: none;
+  color: black;
+}
+
+.contact-button:hover {
+  text-decoration: none;
+}
