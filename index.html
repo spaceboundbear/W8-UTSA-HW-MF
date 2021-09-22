@@ -11,55 +11,71 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Michael Fischer | Portfolio</title>
   </head>
-  <body>
-    <nav
-      class="
-        uk-navbar-container
-        uk-padding
-        uk-padding-remove-top
-        uk-padding-remove-bottom
-      "
-      uk-navbar
+  <body class="uk-background-muted uk-dark">
+    <div
+      uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky"
     >
-      <div class="uk-navbar-right">
-        <ul class="uk-navbar-nav">
-          <li class="uk-active"><a href="#">About</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">Resume</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
+      <nav
+        class="
+          uk-navbar-container
+          uk-padding
+          uk-padding-remove-top
+          uk-padding-remove-bottom
+        "
+        uk-navbar
+      >
+        <div class="uk-navbar-right">
+          <ul class="uk-navbar-nav">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Resume</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <div class="break"></div>
     <div class="uk-container">
-      <div class="uk-margin-top">
-        <h1 class="uk-text-center">Michael Fischer</h1>
+      <div>
+        <h2 class="uk-margin-top">ABOUT ME</h2>
       </div>
-      <div class="uk-panel">
-        <div class="uk-card uk-card-default uk-padding uk-child-width-1-3">
-          <img
-            class="uk-align-left uk-width-1-3"
-            src="./assets/img/headshot.JPG"
-            width=""
-            height=""
-            alt="Example image"
-          />
-          <div class="uk-width-3-3">
-            <h3>About Me</h3>
-            <p>
-              Hey There! My name is Michael Fischer, and I'm a Full Stack Web
-              Developer (in training) based in San Antonio, TX. When I’m not
-              behind a computer, you can find me scuba diving at the lake, out
-              hiking, or hanging out with my cats.
-            </p>
-            <p>
-              Check out some of my work below, along with my resume and other
-              ways to contact me!
-            </p>
+      <div class="uk-panel uk-margin-top">
+        <div
+          class="
+            uk-card
+            uk-card-default
+            uk-card-hover
+            uk-grid-collapse
+            uk-child-width-1-3@s
+            uk-margin
+          "
+          uk-grid
+        >
+          <div class="uk-card-media-left uk-cover-container uk-width-1-3@m">
+            <img src="./assets/img/headshot.JPG" alt="" uk-cover />
+            <canvas width="600 " height="500"></canvas>
+          </div>
+          <div class="uk-width-2-3@m">
+            <div class="uk-card-body">
+              <h2>HEY, I'M MICHAEL</h2>
+              <p>
+                Hey There! My name is Michael Fischer, and I'm a Full Stack Web
+                Developer (in training) based in San Antonio, TX. When I’m not
+                behind a computer, you can find me scuba diving at the lake, out
+                hiking, or hanging out with my cats.
+              </p>
+              <p>
+                Check out some of my work below, along with my resume and other
+                ways to contact me!
+              </p>
+            </div>
           </div>
         </div>
       </div>
+      <div class="break"></div>
       <div>
-        <h3 class="uk-margin-top">PROJECTS</h3>
+        <h2 class="uk-margin-top">PROJECTS</h2>
       </div>
       <div
         class="uk-child-width-1-3@m"
@@ -67,12 +83,12 @@
         uk-scrollspy="cls: uk-animation-fade; target: .uk-card; delay: 500; repeat: true"
       >
         <div>
-          <div class="uk-card uk-card-default">
+          <div class="uk-card uk-card-hover uk-card-default">
             <div class="uk-card-media-top">
-              <img src="images/light.jpg" alt="" />
+              <img src="./assets/img/weather.PNG" alt="" />
             </div>
             <div class="uk-card-body">
-              <h3 class="uk-card-title">Media Top</h3>
+              <h3 class="uk-card-title">Weather Dashboard</h3>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt.
@@ -81,12 +97,12 @@
           </div>
         </div>
         <div>
-          <div class="uk-card uk-card-default">
+          <div class="uk-card uk-card-hover uk-card-default">
             <div class="uk-card-media-top">
-              <img src="images/light.jpg" alt="" />
+              <img src="./assets/img/emswift.PNG" alt="" />
             </div>
             <div class="uk-card-body">
-              <h3 class="uk-card-title">Media Top</h3>
+              <h3 class="uk-card-title">EMSwift</h3>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt.
@@ -95,9 +111,9 @@
           </div>
         </div>
         <div>
-          <div class="uk-card uk-card-default">
+          <div class="uk-card uk-card-hover uk-card-default">
             <div class="uk-card-media-top">
-              <img src="images/light.jpg" alt="" />
+              <img src="./assets/img/workday.PNG" alt="" />
             </div>
             <div class="uk-card-body">
               <h3 class="uk-card-title">Media Top</h3>
@@ -109,7 +125,10 @@
           </div>
         </div>
       </div>
-      <h3>CONTACT</h3>
+      <div class="break"></div>
+      <h2 class="uk-margin-top">RESUME</h2>
+      <div class="break"></div>
+      <h2 class="uk-margin-top">CONTACT</h2>
       <div
         class="uk-child-width-expand@s uk-text-center uk-margin-bottom"
         uk-grid
