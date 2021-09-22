@@ -27,16 +27,16 @@
         <a href="" class="uk-navbar-item uk-logo">MICHAEL FISCHER</a>
         <div class="uk-navbar-right">
           <ul class="uk-navbar-nav">
-            <li><a href="#">About</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Resume</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
       </nav>
     </div>
 
-    <div class="break"></div>
+    <div class="break" id="about"></div>
     <div class="uk-container">
       <div>
         <h2 class="uk-margin-top">ABOUT ME</h2>
@@ -74,7 +74,7 @@
           </div>
         </div>
       </div>
-      <div class="break"></div>
+      <div class="break" id="projects"></div>
       <div>
         <h2 class="uk-margin-top">PROJECTS</h2>
       </div>
@@ -91,8 +91,9 @@
             <div class="uk-card-body">
               <h3 class="uk-card-title">Weather Dashboard</h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt.
+                This app is a simple weather dashboard made using Javascript and
+                Materialize. When the user searches for a city, the current and
+                5day forecast is displayed for the city.
               </p>
             </div>
           </div>
@@ -105,8 +106,11 @@
             <div class="uk-card-body">
               <h3 class="uk-card-title">EMSwift</h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt.
+                This application is a simple way for EMS and first responders to
+                keep track of patients under their care. A user can store
+                patient information, vitals, symptoms, view past patients, and
+                retrieve local nearby hospitals with traffic updates to make an
+                accurate decision on where to transport patients.
               </p>
             </div>
           </div>
@@ -117,18 +121,21 @@
               <img src="./assets/img/workday.PNG" alt="" />
             </div>
             <div class="uk-card-body">
-              <h3 class="uk-card-title">Media Top</h3>
+              <h3 class="uk-card-title">Workday Scheduler</h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt.
+                This app is a simple daily scheduler to manage a standard work
+                day. It keeps track of your time and will change color based on
+                the time of day. You can save your schedule and clear it as
+                well.
               </p>
             </div>
           </div>
         </div>
       </div>
-      <div class="break"></div>
+      <div class="break" id="resume"></div>
       <h2 class="uk-margin-top">RESUME</h2>
-      <div class="break"></div>
+      <img src="./assets/img/ResumeDev.jpg" />
+      <div class="break" id="contact"></div>
       <h2 class="uk-margin-top">CONTACT</h2>
       <div
         class="uk-child-width-expand@s uk-text-center uk-margin-bottom"
@@ -146,7 +153,12 @@
         </div>
         <div>
           <div class="uk-card-small uk-card-default uk-card-body">
-            <a href="#" class="contact-button"> LINKEDIN </a>
+            <a
+              href="https://www.linkedin.com/in/michael-fischer-webdev"
+              class="contact-button"
+            >
+              LINKEDIN
+            </a>
           </div>
         </div>
         <div>
@@ -158,7 +170,7 @@
         </div>
         <div>
           <div class="uk-card-small uk-card-default uk-card-body">
-            <a href="" class="contact-button"
+            <a href="mailto:michael@spaceboundbear.com" class="contact-button"
               ><span uk-icon="mail"></span>
 
               EMAIL
